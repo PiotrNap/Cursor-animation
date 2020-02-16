@@ -1,15 +1,15 @@
 let mouseCursor = document.querySelector(".cursor");
-let navLinks = document.querySelectorAll(".nav-link li");
+let navLinks = document.querySelectorAll(".nav-links li");
 
 window.addEventListener("mousemove", cursor);
 
-navLinks.forEarch(link => {
+navLinks.forEach(link => {
   link.addEventListener("mouseover", () => {
     mouseCursor.classList.add("link-grow");
     link.classList.add("hovered-link");
   });
   link.addEventListener("mouseleave", () => {
-    mouseCursos.classList.remove("link-grow");
+    mouseCursor.classList.remove("link-grow");
     link.classList.remove("hovered-link");
   });
 });
@@ -17,5 +17,5 @@ navLinks.forEarch(link => {
 function cursor(e) {
   //console.log(e.pageX, e.pageY);
   mouseCursor.style.top = e.pageY + "px";
-  mouseCursor.style.top = e.pageX + "px";
+  mouseCursor.style.left = e.pageX + "px";
 }
