@@ -17,7 +17,7 @@ html {
   overflow: hidden;
   background: url(mountains-landscape.jpg) no-repeat center;
   background-size: cover;
-  z-index: -3;
+  z-index: -5;
   object-fit: cover;
   transition: all 0.3s ease;
 }
@@ -54,9 +54,9 @@ html {
 }
 
 .cursor {
-  width: 25px;
-  height: 25px;
-  border: 1.5px solic black;
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid black;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
